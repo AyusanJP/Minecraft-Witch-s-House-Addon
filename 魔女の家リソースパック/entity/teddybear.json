@@ -1,0 +1,33 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+      "description": {
+        
+        "identifier": "majyonoie:teddybear",
+        "materials": { "default": "teddybear" },
+        "textures": {
+          "default": "textures/teddybear"
+        },
+        "geometry": {
+          "default": "geometry.teddybear"
+        },
+        "render_controllers": [ "controller.render.teddybear" ],
+        "spawn_egg": {
+          "base_color": "#e79595",
+          "overlay_color": "#ef2222"
+        },
+        "script": {
+          "animate": [
+            "look_at_target",
+            "controller_move"
+          ]
+        },
+        "animations": {
+          "look_at_target": "animation.common.look_at_target",
+          "controller_move": "controller.animation.general.move",
+          "idle": "animation.teddybear.idle",
+          "walk": "animation.teddybear.walk"
+        }
+      }
+    }
+  }

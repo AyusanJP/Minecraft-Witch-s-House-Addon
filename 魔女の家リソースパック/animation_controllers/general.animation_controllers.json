@@ -1,0 +1,28 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+        
+		"controller.animation.general.move" : {
+			"initial_state" : "idle",
+			"states" : {
+				"idle" : {
+                    "animations" : [ "idle" ],
+					"transitions" : [
+                        {
+							"walk" : "query.ground_speed"
+						}
+					]
+				},
+				"walk" : {
+                    "animations" : [ "walk" ],
+					"transitions" : [
+                        {
+							"idle" : "!query.ground_speed"
+						}
+					],
+                    "blend_transition" : 0.25
+				}
+			}
+		}
+	}
+}
